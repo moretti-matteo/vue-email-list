@@ -16,8 +16,10 @@
 <body>
 
     <div id="app">
-        <div v-for="email in emailList">
-            <p>{{email}}</p>
+        <div v-if="emailList.length === max">
+            <div v-for="email in emailList">
+                <p>{{email}}</p>
+            </div>
         </div>
     </div>
 
